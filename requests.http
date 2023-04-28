@@ -1,0 +1,38 @@
+@domain=http://localhost:8080/api
+
+###
+GET {{domain}}/admin/employees
+
+###
+POST {{domain}}/admin/employees
+Content-Type: application/json
+
+{
+    "name":"ali",
+    "email":"ali.ali123@gmail.com",
+    "password":"ali11",
+    "role":"employee"
+}
+
+###
+GET {{domain}}/admin/get-single-shop/629c583e8f0d20320d69cacb
+
+###
+PUT {{domain}}/admin/update-shop/629b9f0be67f4ac462d1addc
+Content-Type: application/json
+
+{
+    "name":"Mohsin Ali",
+    "email":"mohsin.ali123@gmail.com",
+    "password":"123",
+    "role":"6299b8cd398e41c87d5b3606"
+}
+
+###
+POST {{domain}}/api/login
+Content-Type: application/json
+
+{
+    "email":"ali.ali123@gmail.com",
+    "password":"ali11",
+}
